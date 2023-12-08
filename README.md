@@ -7,7 +7,9 @@ Insider transactions are legal if the insider makes a trade and reports it to th
 ### Instructions
 The idea is to create a process that that will extract the data and analyse it to report inside trading.
 
-We need to analyse the data of 3 companies. The criteria to select the companies is up to you! You can find a list of public tickers in the links below.
+The criteria to select the companies is up to you! You can find a list of public tickers in the links below.
+
+The expected response will be the ticker/company, the person who did the transaction, job title, the date and the amount of shares and how much in percentage of the stock option that represents. 
 
 *bonus*: unit tests and documentation
 
