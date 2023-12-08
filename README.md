@@ -9,7 +9,7 @@ The idea is to create a process that that will extract the data and analyse it t
 
 The criteria to select the companies is up to you! You can find a list of public tickers in the links below.
 
-The expected response will be the ticker/company, the person who did the transaction, job title, the date and the amount of shares and how much in percentage of the stock option that represents. 
+The expected response will be the ticker/company, the person who did the transaction, job title, the date and the amount of shares and how much in percentage of the market cap that represents. 
 
 *bonus*: unit tests and documentation
 
