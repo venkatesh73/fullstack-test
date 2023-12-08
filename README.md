@@ -11,7 +11,9 @@ The criteria to select the companies is up to you! You can find a list of public
 
 The expected response will be the ticker/company, the person who did the transaction, job title, the date and the amount of shares and how much in percentage of the market cap that represents. 
 
-*bonus*: unit tests and documentation
+*bonus*: React ui to display the results
+
+*extra bonus*: unit tests and documentation
 
 -----
 
