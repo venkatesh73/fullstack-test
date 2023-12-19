@@ -5,7 +5,7 @@ Insider transactions are legal if the insider makes a trade and reports it to th
 
 
 ### Instructions
-The idea is to create a process that that will extract the data and analyse it to report inside trading.
+The idea is to create a process that that will extract the data from the **sec.gov** and **edgar** and analyse it to report inside trading.
 
 The criteria to select the companies is up to you! You can find a list of public tickers in the links below.
 
