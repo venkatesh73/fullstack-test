@@ -29,3 +29,6 @@ The expected response will be the ticker/company, the person who did the transac
 - https://www.sec.gov/files/company_tickers_exchange.json
 - https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=000879764&owner=include&count=100&output=atom
 - https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&CIK=&type=&company=&dateb=&owner=include&start=0&count=100&output=atom
+- https://finance.yahoo.com/quote/AAPL?p=AAPL
+- https://query2.finance.yahoo.com/v7/finance/options/AAPL
+- https://github.com/ranaroussi/yfinance/blob/8975689bd19f96ea4655688611b0d853822eb5ec/yfinance/ticker.py
