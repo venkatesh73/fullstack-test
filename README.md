@@ -18,7 +18,7 @@ The expected response will be the ticker/company, the person who did the transac
 -----
 
 ### Publish your solution
-- Clone this repository
+- Fork this repository
 - Create a new branch with your name
 - Create a pull request to the main branch with your solution
 
