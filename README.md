@@ -13,9 +13,10 @@ The expected response will be the ticker/company, the person who did the transac
 
 For the MarketCap, you can use Yahoo Api or anyother you prefer.
 
-*bonus*: React ui to display the results
-
-*extra bonus*: unit tests and documentation
+*bonus*: 
+- React UI to display the results
+- Unit Tests
+- Documentation
 
 -----
 
