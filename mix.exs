@@ -54,7 +54,8 @@ defmodule InsiderTrading.MixProject do
       {:httpoison, "~> 2.2.1"},
       {:mox, "~> 1.1.0"},
       {:sweet_xml, "~> 0.7.4"},
-      {:elixir_xml_to_map, "~> 3.1.0"}
+      {:elixir_xml_to_map, "~> 3.1.0"},
+      {:nimble_csv, "~> 1.2"}
     ]
   end
 

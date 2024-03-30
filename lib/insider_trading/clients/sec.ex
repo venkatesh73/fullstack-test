@@ -2,6 +2,7 @@ defmodule InsiderTrading.Clients.Sec do
   import SweetXml
 
   alias InsiderTrading.Clients.Helpers
+  alias InsiderTrading.Core.InsiderTrade
   alias InsiderTrading.Core.TraderInfo
   alias InsiderTrading.Core.Transaction
 
@@ -20,22 +21,23 @@ defmodule InsiderTrading.Clients.Sec do
     end
   end
 
-  def get_company_forms(endpoint) do
+  def get_company_forms(endpoint, marketcap) do
     with {:ok, response} <- Helpers.get(@request_headers, endpoint),
          {:ok, endpoint} <- extract_form_data(response),
-         company_data <- get_company_form_data(endpoint) do
+         company_data <- get_company_form_data(endpoint, marketcap) do
       company_data
     end
   end
 
-  def get_company_form_data(endpoint) do
+  def get_company_form_data(endpoint, marketcap) do
     endpoint = "#{@base_url}/#{endpoint}"
 
     with {:ok, response} <- Helpers.get(@request_headers, endpoint),
          form_data <- XmlToMap.naive_map(response),
          ownership_document <- Map.get(form_data, "ownershipDocument", %{}),
-         _trader_info <- TraderInfo.parse(ownership_document) do
-      Transaction.parse(ownership_document)
+         trader_info <- TraderInfo.parse(ownership_document),
+         transaction_info <- Transaction.parse(ownership_document, marketcap) do
+      InsiderTrade.new(transaction_info, trader_info)
     end
   end
 
